@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Entrada - Parqueadero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container form-page">
+        <img src="img/logo parqueadero.png" alt="Logo Parqueadero" class="logo registro_entrada">
+        <h1>Registrar Entrada de Vehículo</h1>
+        <form id="entrada-form">
+            <div class="input-group">
+                <label for="placa_entrada">Placa del Vehículo:</label>
+                <input type="text" id="placa_entrada" name="placa_entrada" placeholder="Ej: ABC-123" required>
+            </div>
+            <div class="input-group">
+                <label for="tipo_vehiculo_entrada">Tipo de Vehículo:</label>
+                <select id="tipo_vehiculo_entrada" name="tipo_vehiculo_entrada" required>
+                    <option value="">Selecciona</option>
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                    <option value="camioneta">Camioneta</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="fecha_entrada">Fecha de Entrada:</label>
+                <input type="date" id="fecha_entrada" name="fecha_entrada" readonly>
+            </div>
+            <div class="input-group">
+                <label for="hora_entrada">Hora de Entrada:</label>
+                <input type="time" id="hora_entrada" name="hora_entrada" readonly>
+            </div>
+            <div class="input-group">
+                <label for="id_cliente_entrada">ID Cliente (Opcional):</label>
+                <input type="text" id="id_cliente_entrada" name="id_cliente_entrada" placeholder="Ej: 12345">
+            </div>
+            <button type="submit" class="btn primary-btn">Registrar Entrada</button>
+            <a href="dashboard.html" class="btn secondary-btn">Volver al Panel</a>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

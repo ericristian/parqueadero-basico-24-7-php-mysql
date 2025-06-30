@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Salida - Parqueadero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container form-page">
+         <img src="img/logo parqueadero.png" alt="Logo Parqueadero" class="logo registro_salida">
+        <h1>Registrar Salida de Vehículo</h1>
+        <form id="salida-form">
+            <div class="input-group">
+                <label for="placa_salida">Placa del Vehículo:</label>
+                <input type="text" id="placa_salida" name="placa_salida" placeholder="Ej: ABC-123" required>
+            </div>
+            <button type="button" id="buscar-vehiculo-btn" class="btn">Buscar Vehículo</button>
+
+            <div id="detalles-entrada" class="details-section" style="display: none;">
+                <h3>Detalles de Entrada:</h3>
+                <p><strong>Placa:</strong> <span id="detalle_placa"></span></p>
+                <p><strong>Tipo:</strong> <span id="detalle_tipo"></span></p>
+                <p><strong>Fecha Entrada:</strong> <span id="detalle_fecha_entrada"></span></p>
+                <p><strong>Hora Entrada:</strong> <span id="detalle_hora_entrada"></span></p>
+                <p><strong>Hora Salida:</strong> <span id="detalle_hora_salida"></span></p>
+                <p class="total-tarifa"><strong>Tarifa a Pagar:</strong> <span id="tarifa_a_pagar">$0.00</span></p>
+            </div>
+
+            <div class="input-group" id="metodo-pago-group" style="display: none;">
+                <label for="metodo_pago">Método de Pago:</label>
+                <select id="metodo_pago" name="metodo_pago">
+                    <option value="">Selecciona</option>
+                    <option value="efectivo">Efectivo</option>
+                    <option value="tarjeta">Tarjeta</option>
+                    <option value="nequi">Nequi/Daviplata</option>
+                </select>
+            </div>
+
+            <button type="submit" id="registrar-salida-btn" class="btn primary-btn" style="display: none;">Registrar Salida</button>
+            <a href="dashboard.html" class="btn secondary-btn">Volver al Panel</a>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

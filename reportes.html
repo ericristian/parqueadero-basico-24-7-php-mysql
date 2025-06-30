@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - Parqueadero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container form-page">
+         <img src="img/logo parqueadero.png" alt="Logo Parqueadero" class="logo reportes">
+        <h1>Generar Reportes</h1>
+        <form id="reporte-form">
+            <div class="input-group">
+                <label for="tipo_reporte">Tipo de Reporte:</label>
+                <select id="tipo_reporte" name="tipo_reporte">
+                    <option value="ingresos_diarios">Ingresos Diarios</option>
+                    <option value="vehiculos_entrados_salidos">Vehículos Entrados/Salidos</option>
+                    <option value="ocupacion_actual">Ocupación Actual</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="fecha_inicio">Desde:</label>
+                <input type="date" id="fecha_inicio" name="fecha_inicio">
+            </div>
+            <div class="input-group">
+                <label for="fecha_fin">Hasta:</label>
+                <input type="date" id="fecha_fin" name="fecha_fin">
+            </div>
+            <button type="submit" class="btn primary-btn">Generar Reporte</button>
+        </form>
+
+        <div id="reporte-resultado" class="report-section" style="display: none;">
+            <h2>Resultado del Reporte</h2>
+            <p>Aquí se mostrará un resumen del reporte solicitado.</p>
+        </div>
+        <a href="dashboard.html" class="btn secondary-btn">Volver al Panel</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

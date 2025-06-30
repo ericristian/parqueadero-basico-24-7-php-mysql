@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Tarifas - Parqueadero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container form-page">
+         <img src="img/logo parqueadero.png" alt="Logo Parqueadero" class="logo gestion_tarifas">
+        <h1>Gestión de Tarifas</h1>
+        <form id="tarifa-form">
+            <div class="input-group">
+                <label for="tipo_vehiculo_tarifa">Tipo de Vehículo:</label>
+                <select id="tipo_vehiculo_tarifa" name="tipo_vehiculo_tarifa">
+                    <option value="">Selecciona</option>
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                    <option value="camioneta">Camioneta</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="tarifa_hora">Tarifa por Hora:</label>
+                <input type="number" id="tarifa_hora" name="tarifa_hora" step="0.01" placeholder="Ej: 3000">
+            </div>
+            <div class="input-group">
+                <label for="tarifa_dia">Tarifa por Día:</label>
+                <input type="number" id="tarifa_dia" name="tarifa_dia" step="0.01" placeholder="Ej: 25000">
+            </div>
+            <button type="submit" class="btn primary-btn">Guardar Cambios</button>
+            <button type="button" class="btn secondary-btn">Añadir Nueva Tarifa</button>
+        </form>
+
+        <h2>Tarifas Actuales</h2>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Vehículo</th>
+                        <th>Tarifa por Hora</th>
+                        <th>Tarifa por Día</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carro</td>
+                        <td>$3.000</td>
+                        <td>$25.000</td>
+                        <td><button class="btn small-btn edit-btn">Editar</button> <button class="btn small-btn delete-btn">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Moto</td>
+                        <td>$1.500</td>
+                        <td>$12.000</td>
+                        <td><button class="btn small-btn edit-btn">Editar</button> <button class="btn small-btn delete-btn">Eliminar</button></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>
+        <a href="dashboard.html" class="btn secondary-btn">Volver al Panel</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
