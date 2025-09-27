@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restablecer Contraseña - Parqueadero</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container form-page">
+         <img src="img/logo parqueadero.png" alt="Logo Parqueadero" class="logo-recuperar">
+        <h1>Restablecer Contraseña</h1>
+        <form id="olvidaste-form">
+            <p>Ingresa tu nombre de usuario para restablecer tu contraseña.</p>
+            <div class="input-group">
+                <label for="recuperar-username">Usuario:</label>
+                <input type="text" id="recuperar-username" name="recuperar-username" required>
+            </div>
+            <div class="input-group">
+                <label for="nueva-contrasena">Nueva Contraseña:</label>
+                <input type="password" id="nueva-contrasena" name="nueva-contrasena" required>
+            </div>
+            <div class="input-group">
+                <label for="confirmar-nueva-contrasena">Confirmar Nueva Contraseña:</label>
+                <input type="password" id="confirmar-nueva-contrasena" name="confirmar-nueva-contrasena" required>
+            </div>
+            <button type="submit" class="btn primary-btn">Restablecer Contraseña</button>
+        </form>
+        <a href="index.html" class="btn secondary-btn">Volver al Inicio de Sesión</a>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
